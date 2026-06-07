@@ -100,7 +100,7 @@ GO
 -- Loading Data Into raw Schema...
 -- ==============================================================
 
-PRINT '>>> Bulk Inserting Data Into Table: raw.dim_customer_info';
+-- Bulk Inserting Data Into Table: raw.dim_customer_info
 BULK INSERT raw.dim_customer_info
 FROM '/var/opt/mssql/shared/DataAnalysis/datasets/dim_customer_info.csv'
 
@@ -111,7 +111,7 @@ WITH (
     TABLOCK
 );
 
-PRINT '>>> Bulk Inserting Data Into Table: raw.dim_product_info';
+-- Bulk Inserting Data Into Table: raw.dim_product_info
 BULK INSERT raw.dim_product_info
 FROM '/var/opt/mssql/shared/DataAnalysis/datasets/dim_product_info.csv'
 WITH (
@@ -121,7 +121,7 @@ WITH (
     TABLOCK
 );
 
-PRINT '>>> Bulk Inserting Data Into Table: raw.fact_sales_info';
+-- Bulk Inserting Data Into Table: raw.fact_sales_info
 BULK INSERT raw.fact_sales_info
 FROM '/var/opt/mssql/shared/DataAnalysis/datasets/fact_sales_info.csv'
 WITH (
