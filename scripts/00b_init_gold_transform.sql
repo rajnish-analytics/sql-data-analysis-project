@@ -14,6 +14,8 @@ The script performs the following tasks:
 =============================================================================================================
 */
 
+
+
 -- ==============================================================
 -- Drop Table If Exists And Creating Tables In gold Schema...
 -- ==============================================================
@@ -76,7 +78,7 @@ GO
 -- Inserting Data Into gold Schema...
 -- ==============================================================
 
-PRINT '>>> Inserting Data Into Table: gold.dim_customer_info';
+-- Inserting Data Into Table: gold.dim_customer_info
 INSERT INTO gold.dim_customer_info (
     customer_key,
     customer_id,
@@ -103,7 +105,7 @@ SELECT
 FROM raw.dim_customer_info;
 GO
 
-PRINT '>>> Inserting Data Into Table: gold.dim_product_info';
+-- Inserting Data Into Table: gold.dim_product_info
 INSERT INTO gold.dim_product_info (
     product_key,
     product_id,
@@ -132,7 +134,7 @@ SELECT
 FROM raw.dim_product_info;
 GO
 
-PRINT '>>> Inserting Data Into Table: gold.fact_sales_info';
+-- Inserting Data Into Table: gold.fact_sales_info
 INSERT INTO gold.fact_sales_info (
     order_id,
     product_key,
