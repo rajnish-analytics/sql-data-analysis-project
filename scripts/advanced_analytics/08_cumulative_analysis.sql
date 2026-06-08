@@ -64,26 +64,6 @@ WHERE order_date IS NOT NULL
 GROUP BY DATETRUNC(MONTH, order_date), DATETRUNC(YEAR, order_date)
 ORDER BY DATETRUNC(MONTH, order_date);
 
--- Year-to-Date Running Sales & Unweighted Catalog Price Trend
--- Grain: One row per month
-SELECT
-order_date,
-SUM(sales_per_product) total_sales,                -- Total monthly sales across all products
-AVG(avg_price_per_product) unweighted_avg_price,   -- Unweighted average product price across products
-SUM(SUM(sales_per_product)) OVER(PARTITION BY DATETRUNC(YEAR, order_date) ORDER BY order_date) running_total_sales,               -- YTD running sales total
-AVG(AVG(avg_price_per_product)) OVER(PARTITION BY DATETRUNC(YEAR, order_date) ORDER BY order_date) running_unweighted_avg_price   -- YTD running average of monthly unweighted catalog price
-FROM (
-    SELECT
-    DATETRUNC(MONTH, order_date) order_date,
-    SUM(sales_amount) sales_per_product,    -- Total sales for each product in the month
-    AVG(unit_price) avg_price_per_product   -- Average unit price for each product in the month
-    FROM gold.fact_sales_info
-    WHERE order_date IS NOT NULL
-    GROUP BY product_key, DATETRUNC(MONTH, order_date)   --product level granularity
-)t
-GROUP BY order_date
-ORDER BY order_date;
-
 -- Year-to-Date Running Average of Monthly Product Average Sales per Order
 -- Grain: One row per month
 WITH monthly_product_sales AS
