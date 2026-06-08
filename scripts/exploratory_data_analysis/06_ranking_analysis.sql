@@ -77,7 +77,7 @@ ON s.product_key = p.product_key
 GROUP BY p.product_name
 ORDER BY 2 ASC;
 
--- Top 5 product sub-categories which generate highest revenue (Worst performing)
+-- Top 5 product sub-categories which generate highest revenue (Best performing)
 SELECT TOP 5
 p.subcategory,
 SUM(s.sales_amount) total_revenue
