@@ -27,6 +27,7 @@ LEFT JOIN gold.dim_customer_info c
 ON s.customer_key = c.customer_key
 GROUP BY country
 ORDER BY 2 DESC;
+
 -- Note: All customers have placed orders, so, we get same result from above both queries.
 
 -- Total number of customers by gender
