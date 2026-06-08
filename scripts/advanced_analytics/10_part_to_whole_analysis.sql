@@ -1,14 +1,14 @@
 /*
-=================================================================================================================================
+==================================================================================================================================
 10. Part-to-Whole / Proportional Analysis: (Understanding the contribution of individual segments to overall business performance)
-=================================================================================================================================
+==================================================================================================================================
 Purpose:
     • Analyze the proportional contribution of categories, countries, and years to overall business performance
     • Identify the highest contributing business segments and key revenue drivers
     • Compare category-wise, country-wise, and yearly contribution to overall sales and orders
     • Measure percentage contribution using proportional and window-based calculations
     • Understand business concentration across products, customers, and time periods
-=================================================================================================================================
+==================================================================================================================================
 */
 
 -- Categories that contribute the most to overall sales
