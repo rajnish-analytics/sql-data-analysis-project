@@ -1,8 +1,8 @@
 /*
-==============================================================================================
+=======================================================================================================
 Script: 1) Create DataWarehouseAnalysis Database and raw/gold Schemas
         2) Create Tables and Load Data into raw Schema
-==============================================================================================
+=======================================================================================================
 Objective: This script initializes the DataWarehouseAnalysis database by creating it from scratch and 
 setting up the raw and gold schemas for data analysis.
  
@@ -16,7 +16,7 @@ This script performs the following tasks:
 3. Creates two schemas within the DataWarehouseAnalysis database: raw and gold.
 4. Creates tables in the raw schema for customer info, product info, and sales info.
 5. Loads data into the raw schema tables from CSV files using BULK INSERT.
-==============================================================================================
+=======================================================================================================
 */
 
 -- Switch to the master database
