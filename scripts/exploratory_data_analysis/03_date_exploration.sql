@@ -19,7 +19,7 @@ DATEDIFF(MONTH, MIN(order_date), MAX(order_date)) AS range_months,
 DATEDIFF(QUARTER, MIN(order_date), MAX(order_date)) AS range_quarters
 FROM gold.fact_sales_info;
 
--- Alternate: Explore the oldest and youngest customer
+-- Explore the oldest and youngest customer
 SELECT
 MIN(birthdate) AS oldest_birthdate,
 DATEDIFF(YEAR, MIN(birthdate), GETDATE()) AS age,
