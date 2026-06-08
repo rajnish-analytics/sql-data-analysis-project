@@ -33,7 +33,7 @@ FROM gold.dim_product_info
 
 UNION ALL
 
--- Total number of categories of products
+-- Total number of categories of the products
 SELECT
 'Total categories of products',
 CAST(COUNT(DISTINCT category) AS VARCHAR)
@@ -65,7 +65,7 @@ FROM gold.fact_sales_info
 
 UNION ALL
 
--- Total items sold
+-- Total number of items sold
 SELECT
 'Total quantity sold',
 CAST(SUM(quantity) AS VARCHAR)
@@ -73,7 +73,7 @@ FROM gold.fact_sales_info
 
 UNION ALL
 
--- Average selling price
+-- Average selling price of the products
 SELECT
 'Average selling price of products',
 'Rs. ' + CAST(AVG(unit_price) AS VARCHAR)
@@ -120,7 +120,7 @@ FROM (
 
 UNION ALL
 
--- Total sales
+-- Total sales generated
 SELECT
 'Total revenue generated',
 CAST(SUM(sales_amount) AS VARCHAR) + ' INR'
@@ -128,7 +128,7 @@ FROM gold.fact_sales_info
 
 UNION ALL
 
--- Average delivery period for full orders (if we have multiple rows per order_id)
+-- Average delivery period to fully deliver an entire order (If we have multiple rows for the same order_id)
 SELECT
 'Average delivery period per order',
 CAST(CAST(AVG(max_order_delivery*1.0) AS DECIMAL(10, 1)) AS VARCHAR) + ' days'   -- Average time taken to fully deliver an entire order
