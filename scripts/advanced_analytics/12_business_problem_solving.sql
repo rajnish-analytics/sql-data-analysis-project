@@ -30,7 +30,7 @@ WHERE NOT EXISTS (
 );
 
 
--- Year that generated the highest overall revenue
+-- Year that received the highest number of orders
 SELECT
 YEAR(order_date) order_year,
 COUNT(DISTINCT order_id) total_orders
@@ -49,7 +49,7 @@ HAVING COUNT(DISTINCT order_id) =
 );
 
 
--- Year with revenue that has generated maximum sales/revenue
+-- Year that generated the highest overall revenue
 WITH sales_by_year AS
 (
     SELECT
