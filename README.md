@@ -1,6 +1,6 @@
-# 🚀 SQL Data Warehouse & Business Analytics Project
+# 🚀 SQL Data Analysis Project
 
-> End-to-end SQL Data Warehousing, Exploratory Data Analysis (EDA), Advanced Analytics, and Business Reporting using T-SQL & Dimensional Modeling.
+> This project focuses on performing Exploratory Data Analysis (EDA), Advanced Analytical SQL, Business Problem Solving, and Reporting Analysis using SQL Server.
 
 ---
 
