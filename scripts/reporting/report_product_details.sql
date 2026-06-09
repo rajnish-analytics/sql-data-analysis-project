@@ -63,7 +63,7 @@ CREATE VIEW gold.report_product_info AS
         MIN(order_date) AS first_sale_date,
         MAX(order_date) AS last_sale_date,
         DATEDIFF(MONTH, MIN(order_date), MAX(order_date)) AS lifespan_months,
-        CAST(SUM(sales_amount)*1.0 / SUM(quantity) AS DECIMAL(10,2)) avg_selling_price   --ALTERNATE: CAST(AVG(sales_amount*1.0 / NULLIF(quantity, 0)) AS DECIMAL(10,2))
+        CAST(SUM(sales_amount)*1.0 / SUM(quantity) AS DECIMAL(10,2)) avg_selling_price
     FROM product_details
     GROUP BY product_key, product_name, category, subcategory, start_date, cost
     )
