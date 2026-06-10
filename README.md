@@ -346,12 +346,6 @@ Chemical Engineering graduate from **NIT Jalandhar** transitioning into **Data A
 * 🧠 Analytical Problem Solving
 * 🛢️ Advanced SQL
 
----
-
-# ⭐ Project Objective
-
-The objective of this project is to demonstrate practical SQL expertise through structured analytics, business-oriented problem solving, reporting development, and dimensional data modeling using real-world analytical scenarios.
-
 <div align="center">
 
 ### ◈ ◈ ◈
