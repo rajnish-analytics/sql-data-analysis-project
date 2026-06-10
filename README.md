@@ -330,9 +330,7 @@ Potential future enhancements include:
 * Query optimization
 * Indexing strategies
 * Stored procedures & automation
-* Incremental ETL pipelines
-* KPI dashboards
-* Cloud deployment
+* KPI dashboard development
 
 ---
 
