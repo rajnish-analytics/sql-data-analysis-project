@@ -296,13 +296,13 @@ This project demonstrates practical usage of:
 
 # 📌 Key Business Insights Generated
 
-✔️ Identified top-performing product categories
-✔️ Analyzed customer purchasing behavior
-✔️ Detected seasonal sales patterns
-✔️ Compared yearly and monthly business growth
-✔️ Measured category-wise revenue contribution
-✔️ Segmented customers based on demographics and loyalty
-✔️ Discovered unsold product categories
+✔️ Identified top-performing product categories  
+✔️ Analyzed customer purchasing behavior  
+✔️ Detected seasonal sales patterns  
+✔️ Compared yearly and monthly business growth  
+✔️ Measured category-wise revenue contribution  
+✔️ Segmented customers based on demographics and loyalty  
+✔️ Discovered unsold product categories  
 ✔️ Analyzed business performance across different periods
 
 ---
