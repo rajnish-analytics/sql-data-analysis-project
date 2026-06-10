@@ -338,20 +338,6 @@ Potential future enhancements include:
 
 # 👨‍💻 Author
 
-## Rajnish Jangu
-
-Chemical Engineering graduate from NIT Jalandhar transitioning into Data & Analytics with strong interest in:
-
-* 📊 Data Analytics
-* 🏗️ Data Warehousing
-* 📈 Business Intelligence
-* 🧠 Analytical Problem Solving
-* 🛢️ SQL Engineering
-
-## 👨‍💻 Author
-
-# 👨‍💻 Author
-
 ### Rajnish
 
 Chemical Engineering graduate from **NIT Jalandhar** transitioning into **Data Analytics & Data Engineering** with strong interest in:
