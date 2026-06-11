@@ -230,7 +230,7 @@ Business-focused analytical scenarios including:
 * Unsold product categories
 * Monthly revenue trend analysis
 * Peak order period analysis
-* Category performance within top-performing years
+* Product category performance within peak-performing years
 
 ---
 
