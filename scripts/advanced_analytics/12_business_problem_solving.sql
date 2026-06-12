@@ -4,7 +4,7 @@
 ==============================================================================================================================
 Purpose:
     • Solve business-oriented analytical problems using SQL
-    • Identify high-performing and low-performing business areas
+    • Identify high-performing business periods, categories, and sales trends
     • Analyze sales, orders, products, and category performance across time
     • Discover peak-performing years, months, and product categories
     • Detect unsold product categories and sales distribution patterns
